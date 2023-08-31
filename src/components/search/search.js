@@ -11,6 +11,7 @@ const Search = ({ onSearchChange }) => {
       geoApiOptions
     )
       .then((response) => response.json())
+
       .then((response) => {
         return {
           options: response.data.map((city) => {
@@ -22,17 +23,6 @@ const Search = ({ onSearchChange }) => {
         };
       })
       .catch((err) => console.error(err));
-    // try {
-    //   const response = await fetch(
-    //     `${GEO_API_URL}/cities?minPopulation=1000000&namePrefix=${inputValue}`,
-    //     geoApiOptions
-    //   )
-    //   .then()
-    //   const result = await response.text();
-    //   console.log(result);
-    // } catch (error) {
-    //   console.error(error);
-    // }
   };
 
   const handleOnChange = (searchData) => {
@@ -41,13 +31,16 @@ const Search = ({ onSearchChange }) => {
   };
 
   return (
-    <AsyncPaginate
-      placeholder="Search for a city"
-      debounceTimeout={600}
-      value={search}
-      onChange={handleOnChange}
-      loadOptions={loadOptions}
-    />
+    <>
+      <AsyncPaginate
+        placeholder="Search for a city"
+        debounceTimeout={600}
+        value={search}
+        onChange={handleOnChange}
+        loadOptions={loadOptions}
+      />
+      {/* <button onClick={handleOnChange}>Search</button> */}
+    </>
   );
 };
 
