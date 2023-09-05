@@ -1,8 +1,13 @@
 import { useState } from "react";
 import Search from "./components/search/search";
 import CurrentWeather from "./components/current-weather/current-weather";
+import Header from "./components/header";
 import { WEATHER_API_URL } from "./api";
 import { WEATHER_API_KEY } from "./api";
+import { Container } from "react-bootstrap";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import "./App.css";
 
 function App() {
@@ -37,10 +42,11 @@ function App() {
   // console.log(forecast);
 
   return (
-    <div className="container">
+    <Container fluid className="">
+      <Header />
       <Search onSearchChange={handleOnSearchChange} />
-      <CurrentWeather />
-    </div>
+      {currentWeather && <CurrentWeather data={currentWeather} />}
+    </Container>
   );
 }
 

@@ -1,4 +1,9 @@
-.container {
-  max-width: 1080 px;
-  margin: 20px auto;
+
+
+.header-title{
+  margin: 2vw;
+}
+
+.crystal-ball{
+  width: 100%;
 }

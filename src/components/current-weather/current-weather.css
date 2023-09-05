@@ -1,0 +1,10 @@
+.crystal-ball{
+    width: 100%;
+  }
+
+  .sunny{
+    width: 32%;
+ position: relative;
+ top: -250px;
+ right: -325px;
+  }

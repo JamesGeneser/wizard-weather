@@ -7,7 +7,7 @@ const Search = ({ onSearchChange }) => {
 
   const loadOptions = async (inputValue) => {
     return fetch(
-      `${GEO_API_URL}/cities?minPopulation=1000000&namePrefix=${inputValue}`,
+      `${GEO_API_URL}/cities?minPopulation=100000&namePrefix=${inputValue}`,
       geoApiOptions
     )
       .then((response) => response.json())
@@ -33,6 +33,7 @@ const Search = ({ onSearchChange }) => {
   return (
     <>
       <AsyncPaginate
+        className="m-2"
         placeholder="Search for a city"
         debounceTimeout={600}
         value={search}
