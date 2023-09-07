@@ -19,7 +19,7 @@ function App() {
     const [lat, lon] = searchData.value.split(" ");
 
     const currentWeatherFetch = fetch(
-      `${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}`
+      `${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${WEATHER_API_KEY}`
     );
 
     // const forecastFetch = fetch(
@@ -44,8 +44,14 @@ function App() {
   return (
     <Container fluid className="">
       <Header />
+
       <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <CurrentWeather data={currentWeather} />}
+
+      <img
+        src={require("../src/media/Crystal-ball.png")}
+        className="crystal-ball"
+      />
     </Container>
   );
 }
