@@ -3,13 +3,16 @@ import { Container, Row, Col } from "react-bootstrap";
 import Switch from "../switch";
 
 const CurrentWeather = ({ data }) => {
+  const conditions = JSON.stringify(data.weather[0].description);
+  console.log(conditions);
   return (
     <Container fluid>
       <img
         src={require("../../media/Crystal-ball.png")}
         className="crystal-ball"
       />
-      <Switch data={data} />
+
+      {conditions && <Switch data={conditions} />}
       {/* <img src={require("../../media/Sunny.png")} className="sunny"></img> */}
       {/* <img src={require("../../media/Cloudy.png")} className="cloudy" />
       <img src={require("../../media/Cloudy.png")} className="cloudy" /> */}

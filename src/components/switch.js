@@ -1,16 +1,16 @@
 import React from "react";
 
 const Switch = ({ data }) => {
-  const currentWeather = {};
+  console.log(data);
 
-  switch (currentWeather) {
+  switch (data) {
     case "clear sky":
       return <img src={require("../media/clear-sky.png")} />;
     case "few clouds":
       return <img src={require("../media/few-clouds.png")} />;
     case "scattered clouds":
       return <img src={require("../media/scattered-clouds.png")} />;
-    case "broken clouds":
+    case "broken clouds" || "overcast clouds":
       return <img src={require("../media/broken-clouds.png")} />;
     case "shower rain":
       return <img src={require("../media/shower-rain.png")} />;
@@ -23,8 +23,11 @@ const Switch = ({ data }) => {
     // case "mist":
     //   return <img src={require("../media/")} />;
   }
-
-  return <div>switch</div>;
+  //   return (
+  //     <>
+  //       <img src={require("../media/broken-clouds.png")} />;
+  //     </>
+  //   );
 };
 
 export default Switch;
