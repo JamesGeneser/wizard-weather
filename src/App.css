@@ -4,3 +4,6 @@
   margin: 2vw;
 }
 
+#crystal-ball-component-invisible{
+  display: none;
+}

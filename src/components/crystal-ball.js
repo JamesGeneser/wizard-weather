@@ -1,18 +1,14 @@
 import React from "react";
 
-export default function CrystalBall({ data }) {
-  console.log("crystal " + data);
+export default function CrystalBall({ searched }) {
+  console.log("crystal " + searched);
 
-  if ((data = "null")) {
-    return (
-      <div>
-        <img
-          src={require("../media/Crystal-ball.png")}
-          className="crystal-ball"
-        />
-      </div>
-    );
-  } else {
-    return null;
-  }
+  return (
+    <div>
+      <img
+        src={require("../media/Crystal-ball.png")}
+        className="crystal-ball"
+      />
+    </div>
+  );
 }
