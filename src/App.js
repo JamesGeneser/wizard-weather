@@ -6,6 +6,8 @@ import { WEATHER_API_URL } from "./api";
 import { WEATHER_API_KEY } from "./api";
 import { Container } from "react-bootstrap";
 
+import CrystalBall from "./components/crystal-ball";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./App.css";
@@ -48,10 +50,7 @@ function App() {
       <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <CurrentWeather data={currentWeather} />}
 
-      <img
-        src={require("../src/media/Crystal-ball.png")}
-        className="crystal-ball"
-      />
+      <CrystalBall data={currentWeather} />
     </Container>
   );
 }

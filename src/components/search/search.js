@@ -40,7 +40,6 @@ const Search = ({ onSearchChange }) => {
         onChange={handleOnChange}
         loadOptions={loadOptions}
       />
-      {/* <button onClick={handleOnChange}>Search</button> */}
     </>
   );
 };
