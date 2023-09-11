@@ -2,17 +2,7 @@
     width: 100%;
   }
 
-  .sunny{
-    width: 32%;
- position: relative;
- top: -250px;
- right: -325px;
-  }
 
-  .cloudy{
-    width: 32%
-  }
-
-  .icon{
-    width: 32%
-  }
+.icon{
+    width: 100%;
+}

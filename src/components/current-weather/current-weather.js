@@ -6,20 +6,20 @@ const CurrentWeather = ({ data }) => {
   //   console.log(conditions);
   return (
     <Container fluid>
-      <img
-        src={require("../../media/Crystal-ball.png")}
-        className="crystal-ball"
-      />
-
-      <img
-        src={require(`../../media/${data.weather[0].icon}.png`)}
-        className="icon"
-      />
-
       <Row className="current-weather">
-        <Col className="city-name">{data.city}</Col>
-        <Col className="weather-conditions">{data.weather[0].description}</Col>
-        <Col className="temp">{data.main.temp} °F </Col>
+        <Col>
+          <h2 className="city-name">{data.city}</h2>
+          <p className="weather-conditions">{data.weather[0].description}</p>
+
+          <p className="temp">{data.main.temp} °F</p>
+        </Col>
+        <Col>
+          {" "}
+          <img
+            src={require(`../../media/${data.weather[0].icon}.png`)}
+            className="icon"
+          />
+        </Col>
       </Row>
     </Container>
   );
