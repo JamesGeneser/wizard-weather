@@ -1,7 +1,9 @@
+.type{
+  color: white;
+}
 
-
-.header-title{
-  margin: 2vw;
+.title{
+font-size: 50px;
 }
 
 #crystal-ball-component-invisible{

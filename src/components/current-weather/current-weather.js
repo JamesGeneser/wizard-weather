@@ -7,13 +7,15 @@ const CurrentWeather = ({ data }) => {
   return (
     <Container fluid>
       <Row className="current-weather">
-        <Col>
-          <h2 className="city-name">{data.city}</h2>
-          <p className="weather-conditions">{data.weather[0].description}</p>
+        <Col xs={3} sm={6} md={4} className="mt-4">
+          <h2 className="city-name type">{data.city}</h2>
+          <p className="weather-conditions type">
+            {data.weather[0].description}
+          </p>
 
-          <p className="temp">{data.main.temp} °F</p>
+          <p className="temp type">{data.main.temp} °F</p>
         </Col>
-        <Col>
+        <Col xs={9} sm={6} md={8}>
           {" "}
           <img
             src={require(`../../media/${data.weather[0].icon}.png`)}
