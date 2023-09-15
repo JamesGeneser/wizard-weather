@@ -15,16 +15,6 @@ import "./App.css";
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
-  const [notSearched, setNotSearched] = useState(true);
-
-  // function toggleSearched() {
-  //   setNotSearched((notSearched) => !notSearched);
-  // }
-
-  useEffect(() => {
-    setNotSearched((notSearched) => !notSearched);
-    console.log("effect");
-  }, []);
 
   const handleOnSearchChange = (searchData) => {
     console.log(searchData);
@@ -33,8 +23,6 @@ function App() {
     const currentWeatherFetch = fetch(
       `${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${WEATHER_API_KEY}`
     );
-
-    // toggleSearched();
 
     Promise.all([currentWeatherFetch])
       .then(async (response) => {
@@ -52,7 +40,7 @@ function App() {
       <Header />
 
       <Search onSearchChange={handleOnSearchChange} />
-      {notSearched && <CrystalBall />}
+      {!currentWeather && <CrystalBall />}
 
       {currentWeather && <CurrentWeather data={currentWeather} />}
     </Container>
