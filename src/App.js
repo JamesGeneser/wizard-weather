@@ -6,6 +6,8 @@ import Header from "./components/header";
 import { WEATHER_API_URL } from "./api";
 import { WEATHER_API_KEY } from "./api";
 import { Container } from "react-bootstrap";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 import CrystalBall from "./components/crystal-ball";
 
@@ -39,10 +41,14 @@ function App() {
     <Container fluid className="main-container">
       <Header />
 
-      <Search onSearchChange={handleOnSearchChange} />
-      {!currentWeather && <CrystalBall />}
-
-      {currentWeather && <CurrentWeather data={currentWeather} />}
+      <Row>
+        <Col>
+          {" "}
+          <Search onSearchChange={handleOnSearchChange} />
+        </Col>
+        <Col> {!currentWeather && <CrystalBall />}</Col>
+        <Col> {currentWeather && <CurrentWeather data={currentWeather} />}</Col>
+      </Row>
     </Container>
   );
 }
