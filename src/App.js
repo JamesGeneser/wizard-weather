@@ -42,12 +42,15 @@ function App() {
       <Header />
 
       <Row>
-        <Col>
+        <Col lg="4" xl="4">
           {" "}
           <Search onSearchChange={handleOnSearchChange} />
         </Col>
-        <Col> {!currentWeather && <CrystalBall />}</Col>
-        <Col> {currentWeather && <CurrentWeather data={currentWeather} />}</Col>
+        <Col lg="8" xl="8">
+          {" "}
+          {!currentWeather && <CrystalBall />}
+          {currentWeather && <CurrentWeather data={currentWeather} />}
+        </Col>
       </Row>
     </Container>
   );
