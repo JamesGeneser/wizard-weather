@@ -7,7 +7,7 @@ const CurrentWeather = ({ data }) => {
     <Container fluid>
       <Row className="current-weather">
         <Col
-          xs={3}
+          xs={4}
           sm={6}
           md={4}
           className="mt-4 
@@ -21,7 +21,7 @@ const CurrentWeather = ({ data }) => {
           <p className="temp type">{data.main.temp} °F</p>
         </Col>
         <Col
-          xs={9}
+          xs={8}
           sm={6}
           md={8}
           className="ms-0 ps-0 d-flex justify-content-end"
