@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/wizard-weather/static/css/main.526a42bf.css",
+    "main.js": "/wizard-weather/static/js/main.f0e8859c.js",
+    "static/js/787.2b200ef1.chunk.js": "/wizard-weather/static/js/787.2b200ef1.chunk.js",
+    "static/media/Crystal-ball.png": "/wizard-weather/static/media/Crystal-ball.b032d1f419bcf8603ed6.png",
+    "static/media/04d.png": "/wizard-weather/static/media/04d.75aee73572a9a346e406.png",
+    "static/media/04n.png": "/wizard-weather/static/media/04n.75aee73572a9a346e406.png",
+    "static/media/09d.png": "/wizard-weather/static/media/09d.82aa381a24f1dbabe597.png",
+    "static/media/09n.png": "/wizard-weather/static/media/09n.82aa381a24f1dbabe597.png",
+    "static/media/02d.png": "/wizard-weather/static/media/02d.bbf383eb7d697db58132.png",
+    "static/media/02n.png": "/wizard-weather/static/media/02n.bbf383eb7d697db58132.png",
+    "static/media/01d.png": "/wizard-weather/static/media/01d.61c4e30f344b83f2b9b4.png",
+    "static/media/01n.png": "/wizard-weather/static/media/01n.61c4e30f344b83f2b9b4.png",
+    "static/media/13d.png": "/wizard-weather/static/media/13d.49973e0985a27d2954cc.png",
+    "static/media/13n.png": "/wizard-weather/static/media/13n.49973e0985a27d2954cc.png",
+    "static/media/03d.png": "/wizard-weather/static/media/03d.7a988952931b6e248961.png",
+    "static/media/03n.png": "/wizard-weather/static/media/03n.7a988952931b6e248961.png",
+    "static/media/11d.png": "/wizard-weather/static/media/11d.07a21d569fa84aa0b3c4.png",
+    "static/media/11n.png": "/wizard-weather/static/media/11n.07a21d569fa84aa0b3c4.png",
+    "static/media/10d.png": "/wizard-weather/static/media/10d.3a5b501f313dce28c537.png",
+    "static/media/10n.png": "/wizard-weather/static/media/10n.3a5b501f313dce28c537.png",
+    "index.html": "/wizard-weather/index.html",
+    "main.526a42bf.css.map": "/wizard-weather/static/css/main.526a42bf.css.map",
+    "main.f0e8859c.js.map": "/wizard-weather/static/js/main.f0e8859c.js.map",
+    "787.2b200ef1.chunk.js.map": "/wizard-weather/static/js/787.2b200ef1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.526a42bf.css",
+    "static/js/main.f0e8859c.js"
+  ]
+}
